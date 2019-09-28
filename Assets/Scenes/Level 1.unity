@@ -239,6 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438954587}
   - component: {fileID: 438954586}
+  - component: {fileID: 438954588}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -310,6 +311,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &438954588
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438954585}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 0.5}
+    newSize: {x: 2, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.5211954, y: 0.24649048}
+      - {x: -0.51067066, y: 0.24649036}
+      - {x: -0.9964919, y: 0.044952273}
+      - {x: -1, y: -0.25}
+      - {x: 1, y: -0.25}
+      - {x: 0.9964924, y: 0.0422363}
+      - {x: 0.7973461, y: 0.12658697}
 --- !u!1 &511681374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1070,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 2145843405}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b8145aeadd7036e49a67d3acc51e938c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1063,7 +1096,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!212 &2145843408
 SpriteRenderer:
@@ -1123,7 +1156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145843405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.683214, y: 8.3402605, z: 0}
+  m_LocalPosition: {x: 8.7, y: 6.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
