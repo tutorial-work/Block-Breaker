@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    GameSession gameSession;
 
     public void LoadNextScene()
     {
@@ -14,6 +15,8 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStartScene()
     {
+        gameSession = FindObjectOfType<GameSession>();
+        gameSession.DestroyGameSession();
         SceneManager.LoadScene(0);
     }
 

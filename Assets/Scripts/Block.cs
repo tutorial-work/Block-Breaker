@@ -10,13 +10,13 @@ public class Block : MonoBehaviour
 
     // Cached References
     Level level;
-    GameStatus gameStatus;
+    GameSession gameSession;
 
     // Start is called before the first frame update
     void Start()
     {
         level = FindObjectOfType<Level>();
-        gameStatus = FindObjectOfType<GameStatus>();
+        gameSession = FindObjectOfType<GameSession>();
         level.addBlock();
     }
 
@@ -25,6 +25,6 @@ public class Block : MonoBehaviour
         AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
         Destroy(gameObject);
         level.removeBlock();
-        gameStatus.AddToScore();
+        gameSession.AddToScore();
     }
 }
