@@ -7,7 +7,6 @@ public class Block : MonoBehaviour
 
     // Config Params
     [SerializeField] AudioClip breakSound;
-    [SerializeField] TextMesh
 
     // Cached References
     Level level;
