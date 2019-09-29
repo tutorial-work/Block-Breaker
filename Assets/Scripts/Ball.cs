@@ -6,10 +6,13 @@ public class Ball : MonoBehaviour
 {
     // config params
     [SerializeField] Paddle paddle;
-    bool hasStarted = false;
+    [SerializeField] float xPush = 2f;
+    [SerializeField] float yPush = 2f;
+    
 
     // state
     Vector2 paddleToBallVector;
+    bool hasStarted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,7 @@ public class Ball : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 15f);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(xPush, yPush);
             hasStarted = true;
         }
     }
