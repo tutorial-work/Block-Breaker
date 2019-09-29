@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSpeed: 1.5
-  pointsPerBlock: 1
+  pointsPerBlock: 10
   scoreTMP: {fileID: 0}
