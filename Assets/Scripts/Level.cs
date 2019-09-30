@@ -15,12 +15,12 @@ public class Level : MonoBehaviour
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
-    public void addBlock()
+    public void addBreakableBlock()
     {
         breakableBlockCount++;
     }
 
-    public void removeBlock()
+    public void removeBreakableBlock()
     {
         breakableBlockCount--;
         if (breakableBlockCount <= 0)
