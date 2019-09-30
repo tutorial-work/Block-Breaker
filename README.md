@@ -1,4 +1,4 @@
-# Block-Breaker
+# Block-Breaker v.1
 This repository features a simple Brick Breaker game made in Unity, which conceptually was made by GameDev.tv
 
 ### Temporary Link to Game (Active for 30 days)
